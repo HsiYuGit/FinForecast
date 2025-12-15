@@ -8,7 +8,7 @@
 
 請見`Kaggle_Data_Preprocess.ipynb`
 
-測試集請見`X_test`及`y_test`，訓練集請見`X_train`及`y_train`
+測試集請見`X_test`及`y_test`，訓練集請見`X_train`及`y_train`；如須合併檔案，請用`Merge_CSV.ipynb`
 ## Tfidf + Logistic Regression
 ## FinBERT
 本專案使用HuggingFace上[`yiyanghkust/finbert-tone`](https://huggingface.co/yiyanghkust/finbert-to)提供的模型
