@@ -66,5 +66,27 @@ User:
 ```
 {{news_headline}}
 ```
+調用API的code如下：
+```
+from openai import OpenAI
+client = OpenAI()
+
+response = client.responses.create(
+  prompt={
+    "id": "pmpt_693f7031a87881949d607ea99ab16c3002461b1cc8d2969a",
+    "version": "4"
+  },
+  input=[],
+  text={
+    "format": {
+      "type": "text"
+    }
+  },
+  reasoning={},
+  max_output_tokens=2048,
+  store=True,
+  include=["web_search_call.action.sources"]
+)
+```
 ## 已被捨棄的模型
 - FastText + Logistic Regression：因在測試集的表現劣於Tfidf，故不採用
