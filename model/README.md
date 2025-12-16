@@ -55,5 +55,16 @@ weighted avg       0.87      0.87      0.87       500
  [ 12 243  29]
  [  1  22 130]]
 ```
+### 使用API調用prompt template
+本模板使用的模型為微調後的`gpt-4.1-nano-2025-04-14`<br>
+prompt template如下：<br>
+System:
+```
+You are a financial sentiment analysis expert. Analyze the sentiment of the news headline provided. Output only one word: positive, negative, or neutral.
+```
+User:
+```
+{{news_headline}}
+```
 ## 已被捨棄的模型
 - FastText + Logistic Regression：因在測試集的表現劣於Tfidf，故不採用
